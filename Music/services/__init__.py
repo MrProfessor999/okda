@@ -2,9 +2,9 @@ from pyrogram import Client
 from os import listdir
 
 from Music import config
-from Music.services.converter import convert
-from Music.services.downloaders import youtube
-from Music.services.queues import queues
+from Music.services import convert
+from Music.services import youtube
+from Music.services import queues
 
 
 if "raw_files" not in listdir():
@@ -13,7 +13,6 @@ if "raw_files" not in listdir():
 __all__ = ["convert"]
 
 __all__ = ["youtube"]
-
 __all__ = ["clear", "get", "is_empty", "put", "task_done"]
 
 
