@@ -150,5 +150,5 @@ ANIME_HANDLER = ConversationHandler(
 )
 AN_BUTTON_HANDLER = CallbackQueryHandler(anime_button, pattern=r"anime_")
 
-dp.add_handler(ANIME_HANDLER)
-dp.add_handler(AN_BUTTON_HANDLER)
+dispatcher.add_handler(ANIME_HANDLER)
+dispatcher.add_handler(AN_BUTTON_HANDLER)
