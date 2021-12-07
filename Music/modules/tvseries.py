@@ -1,16 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# MIT License
-# Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+# Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot.
 
 
 import requests as r
@@ -26,10 +14,10 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-from lunabot.import dp, TMDBAPI, typing
-from lunabot.helpers import strings as st
-from lunabot.helpers.parsedata import byname, byindex, sort_caps, tvruntime
-from lunabot.helpers.keyboard import keyboard
+from Music.import dp, TMDBAPI,
+from Music.helpers import strings as st
+from Music.helpers.parsedata import byname, byindex, sort_caps, tvruntime
+from Music.helpers.keyboard import keyboard
 
 base_url = "https://api.themoviedb.org/3"
 pic_url = "https://image.tmdb.org/t/p"
@@ -69,7 +57,6 @@ def tvdata(c_id):
 
 
 @run_async
-@typing
 def tv_entry(update, context):
 
     update.effective_message.reply_text(
@@ -80,7 +67,6 @@ def tv_entry(update, context):
 
 
 @run_async
-@typing
 def tv(update, context):
     msg = update.message
     user = update.effective_user
@@ -174,7 +160,6 @@ def tv_button(update, context):
 
 
 @run_async
-@typing
 def cancel(update, context):
     context.bot.sendMessage(update.effective_chat.id, (st.CANCEL))
     return ConversationHandler.END
