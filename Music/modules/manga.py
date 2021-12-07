@@ -1,16 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# MIT License
+
 # Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
 
 
 import requests as r
@@ -26,7 +16,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-from lunabot import dp, typing
+from lunabot import typing
 from lunabot.helpers import strings as st
 from lunabot.helpers.parsedata import sort_caps
 from lhelpers.keyboard import keyboard
@@ -154,5 +144,3 @@ MANGA_HANDLER = ConversationHandler(
 )
 MANGA_BUTTON_HANDLER = CallbackQueryHandler(manga_button, pattern=r"manga_")
 
-dp.add_handler(MANGA_HANDLER)
-dp.add_handler(MANGA_BUTTON_HANDLER)
