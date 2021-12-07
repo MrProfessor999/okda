@@ -9,7 +9,7 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, ConversationHa
 from telegram.error import BadRequest
 from telegram import ForceReply
 
-from Music import LOG, GENIUS
+from Music import LOG, GENIUS ,dp
 from Music.helpers import strings as st
 
 ARTIST, LYRICS = range(2)
@@ -96,4 +96,4 @@ LYRICS_HANDLER = ConversationHandler(
     conversation_timeout=120,
 )
 
-dispatcher.add_handler(LYRICS_HANDLER)
+dp.add_handler(LYRICS_HANDLER)
