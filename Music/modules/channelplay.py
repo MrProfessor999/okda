@@ -17,7 +17,7 @@ from Music.helpers.gets import get_file_name
 from Music.modules.play import arq, cb_admin_check, generate_cover
 from Music.services.callsmusic import callsmusic
 from Music.services.callsmusic import client as USER
-from Music.services.converter.converter import convert
+from Music.services.converter import convert
 from Music.services.downloaders import youtube
 from Music.services.queues import queues
 
