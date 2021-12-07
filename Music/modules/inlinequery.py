@@ -6,11 +6,10 @@ from telegram.ext import InlineQueryHandler
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Music import TMDBAPI
+from Music import TMDBAPI , dp
 from Music.helpers import strings as st
 from Music.helpers.parsedata import article
 from Musichelpers.keyboard import keyboard
-
 
 pic_url = "https://image.tmdb.org/t/p"
 base_url = "https://api.themoviedb.org/3"
