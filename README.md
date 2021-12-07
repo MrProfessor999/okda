@@ -1,7 +1,6 @@
 <h1 align="center">MUSIC PLAYER V4.0 🎵</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [MARSHALX TGCALLS](https://github.com/MarshalX/tgcalls)
 
 <p align="center">
   <img src="https://telegra.ph/file/e487f1de19f7a6667b9de.jpg">
