@@ -17,7 +17,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 from Music.helpers import strings as st
 from Music..helpers.parsedata import sort_caps
 from Music.helpers.keyboard import keyboard
-
+from Music.config import dp
 base_url = "https://kitsu.io/api/edge"
 tempdict = {}
 
