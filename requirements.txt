@@ -1,4 +1,11 @@
 pyrogram
+python-telegram-bot==12.8
+requests
+psycopg2
+ujson
+pyfy
+lyricsgenius
+speedtest-cli>=2.0.2
 tgcrypto
 pytgcalls==2.1.0
 python-dotenv
