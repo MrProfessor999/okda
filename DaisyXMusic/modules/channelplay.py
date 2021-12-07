@@ -1,20 +1,3 @@
-# Daisyxmusic (Telegram bot project)
-# Copyright (C) 2021  Inukaasith
-# Copyright (C) 2021  TheHamkerCat (Python_ARQ)
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-
 from os import path
 
 import requests
@@ -24,19 +7,19 @@ from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from DaisyXMusic.config import BOT_NAME as bn
-from DaisyXMusic.config import DURATION_LIMIT
-from DaisyXMusic.config import UPDATES_CHANNEL as updateschannel
-from DaisyXMusic.config import que
-from DaisyXMusic.helpers.admins import get_administrators
-from DaisyXMusic.helpers.decorators import authorized_users_only
-from DaisyXMusic.helpers.gets import get_file_name
-from DaisyXMusic.modules.play import arq, cb_admin_check, generate_cover
-from DaisyXMusic.services.callsmusic import callsmusic
-from DaisyXMusic.services.callsmusic import client as USER
-from DaisyXMusic.services.converter.converter import convert
-from DaisyXMusic.services.downloaders import youtube
-from DaisyXMusic.services.queues import queues
+from music.config import BOT_NAME as bn
+from MUSIC.config import DURATION_LIMIT
+from Music.config import UPDATES_CHANNEL as updateschannel
+from Music.config import que
+from Music.helpers.admins import get_administrators
+from Music.helpers.decorators import authorized_users_only
+from Music.helpers.gets import get_file_name
+from Music.modules.play import arq, cb_admin_check, generate_cover
+from Music.services.callsmusic import callsmusic
+from Music.services.callsmusic import client as USER
+from Music.services.converter.converter import convert
+from Music.services.downloaders import youtube
+from Music.services.queues import queues
 
 chat_id = None
 
