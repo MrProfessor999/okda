@@ -3,6 +3,7 @@
 
 import os
 from os import getenv
+import telegram.ext as tg
 
 from dotenv import load_dotenv
 
@@ -29,3 +30,5 @@ PMPERMIT = getenv("PMPERMIT", None)
 LOG_GRP = getenv("LOG_GRP", None)
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+
+dp = updater.dispacter
