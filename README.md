@@ -113,7 +113,7 @@ If you donlt like to play in linked channel:
 ### Inspiration
 - [Callsmusic](http://github.com/callsmusic/callsmusic)
 - [tgvc-userbot](https://github.com/callsmusic/tgvc-userbot)
-- [Wolverine of tg](https://t.me/) FOR His Amazing idea ❤️
+- [Wolverine of tg](https://t.me/WOLVERINE_OF_TG) FOR His Amazing idea ❤️
 
 This project is inspired on the hard work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork MUSIC_PLAYER won't exist. 
 Also music_player is inspired by many opensource bots and userbots
