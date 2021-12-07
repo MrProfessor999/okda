@@ -1,16 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# MIT License
 # Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
 
 import requests as r
 
@@ -18,11 +6,10 @@ from telegram.ext import InlineQueryHandler
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
-from acutebot import dp, TMDBAPI
-from acutebot.helpers import strings as st
-from acutebot.helpers.parsedata import article
-from acutebot.helpers.keyboard import keyboard
-from acutebot.helpers.database import users_sql as sql
+from Music import TMDBAPI
+from Music.helpers import strings as st
+from Music.helpers.parsedata import article
+from Musichelpers.keyboard import keyboard
 
 
 pic_url = "https://image.tmdb.org/t/p"
@@ -176,4 +163,4 @@ def inlinequery(update, context):
 
 
 INLINE_HANDLER = InlineQueryHandler(inlinequery)
-dp.add_handler(INLINE_HANDLER)
+dispatcher.add_handler(INLINE_HANDLER)
