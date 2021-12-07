@@ -4,7 +4,7 @@
 #### POWERED BY [MARSHALX TGCALLS](https://github.com/MarshalX/tgcalls)
 
 <p align="center">
-  <img src="https://telegra.ph/file/dd04b1968f1bc1169d162.jpg">
+  <img src="https://telegra.ph/file/e487f1de19f7a6667b9de.jpg">
 </p>
 
 <h2> Features 🔥 </h2>
