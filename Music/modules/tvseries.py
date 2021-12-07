@@ -14,7 +14,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-from Music.import dp, TMDBAPI,
+from Music.import TMDBAPI
 from Music.helpers import strings as st
 from Music.helpers.parsedata import byname, byindex, sort_caps, tvruntime
 from Music.helpers.keyboard import keyboard
@@ -174,5 +174,3 @@ TV_HANDLER = ConversationHandler(
 TV_BUTTON_HANDLER = CallbackQueryHandler(tv_button, pattern=r"tv_")
 
 
-dp.add_handler(TV_HANDLER)
-dp.add_handler(TV_BUTTON_HANDLER)
