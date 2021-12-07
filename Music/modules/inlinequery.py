@@ -162,4 +162,4 @@ def inlinequery(update, context):
 
 
 INLINE_HANDLER = InlineQueryHandler(inlinequery)
-dp.add_handler(INLINE_HANDLER)
+dispatcher.add_handler(INLINE_HANDLER)
