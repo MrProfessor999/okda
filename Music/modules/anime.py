@@ -17,7 +17,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 from Music.helpers import strings as st
 from Music..helpers.parsedata import sort_caps
 from Music.helpers.keyboard import keyboard
-from Music.config import dp
+
 base_url = "https://kitsu.io/api/edge"
 tempdict = {}
 
@@ -150,5 +150,5 @@ ANIME_HANDLER = ConversationHandler(
 )
 AN_BUTTON_HANDLER = CallbackQueryHandler(anime_button, pattern=r"anime_")
 
-dp.add_handler(ANIME_HANDLER)
-dp.add_handler(AN_BUTTON_HANDLER)
+dispatcher.add_handler(ANIME_HANDLER)
+dispatcher.add_handler(AN_BUTTON_HANDLER)
