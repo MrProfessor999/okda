@@ -14,10 +14,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
-from Music .config import ARQ_API_KEY
-from Music .config import BOT_NAME as bn
-from Music .config import DURATION_LIMIT
-from Music .config import UPDATES_CHANNEL as updateschannel
+from Music.config import ARQ_API_KEY
+from Music.config import BOT_NAME as bn
+from Music.config import DURATION_LIMIT
+from Music.config import UPDATES_CHANNEL as updateschannel
 from Music.config import que
 from Music.function.admins import admins as a
 from Music.helpers.admins import get_administrators
@@ -27,7 +27,7 @@ from Music.helpers.filters import command, other_filters
 from Music.helpers.gets import get_file_name
 from Music.services.callsmusic import callsmusic
 from Music.services.callsmusic import client as USER
-from Music.services.converter.converter import convert
+from Music.services.converter import convert
 from Music.services.downloaders import youtube
 from Music.services.queues import queues
 
