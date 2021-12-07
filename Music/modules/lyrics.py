@@ -1,16 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# MIT License
 # Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
 
 
 import os, lyricsgenius
@@ -20,8 +9,8 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, ConversationHa
 from telegram.error import BadRequest
 from telegram import ForceReply
 
-from lunabot import dp, typing, LOG, GENIUS
-from lunabot.helpers import strings as st
+from Music import LOG, GENIUS
+from Music.helpers import strings as st
 
 ARTIST, LYRICS = range(2)
 SONGDICT = {}
@@ -31,7 +20,6 @@ if GENIUS is not None:
 
 
 @run_async
-@typing
 def songname(update, context):
     update.effective_message.reply_text(
         st.SONGNAME, reply_markup=ForceReply(selective=True)
@@ -41,7 +29,6 @@ def songname(update, context):
 
 
 @run_async
-@typing
 def artistname(update, context):
     msg = update.effective_message
     user = update.effective_user
@@ -54,7 +41,6 @@ def artistname(update, context):
 
 
 @run_async
-@typing
 def sendlyrics(update, context):
     chat = update.effective_chat
     msg = update.effective_message
@@ -95,7 +81,6 @@ def sendlyrics(update, context):
 
 
 @run_async
-@typing
 def cancel(update, context):
     context.bot.sendMessage(update.effective_chat.id, (st.CANCEL))
     return ConversationHandler.END
@@ -111,4 +96,4 @@ LYRICS_HANDLER = ConversationHandler(
     conversation_timeout=120,
 )
 
-dp.add_handler(LYRICS_HANDLER)
+dispatcher.add_handler(LYRICS_HANDLER)
