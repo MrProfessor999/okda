@@ -2,7 +2,7 @@ from pyrogram import Client
 from os import listdir
 
 from Music import config
-from Music.services import convert
+from Music.services import converter
 from Music.services import youtube
 from Music.services import queues
 
