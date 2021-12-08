@@ -1,4 +1,3 @@
-# kanged from daisyxmusic
 # Modified by NAVIN
 
 import os
@@ -20,6 +19,8 @@ admins = {}
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 BOT_USERNAME = getenv("BOT_USERNAME")
+USERNAME = getenv("USERNAME")
+NAME = getenv("NAME")
 ASSISTANT_NAME = getenv("ASSISTANT_NAME", "MUSIC_PLAYER")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "EDIT_REPO")
 PROJECT_NAME = getenv("PROJECT_NAME", "MUSIC_PLAYER v4")
@@ -31,4 +32,3 @@ LOG_GRP = getenv("LOG_GRP", None)
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 TMDBAPI = getenv("TMDBAPI", None)
-
