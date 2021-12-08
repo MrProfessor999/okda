@@ -5,8 +5,8 @@ from pyrogram.types import Message
 
 from Music.function.admins import set
 from Music.helpers.decorators import authorized_users_only, errors
-from Music.services.callsmusic import callsmusic
-from Music.services.queues import queues
+from plugins.callsmusic import callsmusic
+from plugins.queues import queues
 from Music.config import que
 
 
