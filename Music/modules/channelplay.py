@@ -7,7 +7,7 @@ from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
-from music.config import BOT_NAME as bn
+from Music.config import BOT_NAME as bn
 from MUSIC.config import DURATION_LIMIT
 from Music.config import UPDATES_CHANNEL as updateschannel
 from Music.config import que
@@ -15,11 +15,11 @@ from Music.helpers.admins import get_administrators
 from Music.helpers.decorators import authorized_users_only
 from Music.helpers.gets import get_file_name
 from Music.modules.play import arq, cb_admin_check, generate_cover
-from Music.services.callsmusic import callsmusic
-from Music.services.callsmusic import client as USER
-from Music.services.converter import convert
-from Music.services.downloaders import youtube
-from Music.services.queues import queues
+from plugins.callsmusic import callsmusic
+from plugins.callsmusic import client as USER
+from plugins.converter import convert
+from plugins.youtube import youtube
+from plugins.queues import queues
 
 chat_id = None
 
