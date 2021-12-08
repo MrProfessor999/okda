@@ -1,9 +1,5 @@
+from Music import BOT_NAME , BOT_USERNAME , USERNAME , NAME
 
-#  (c) 2020 Stɑrry Shivɑm // This file
-
-
-from platform import python_version
-from telegram import __version__ as _libv_
 
 # Contents
 MOVIE_STR = """
@@ -93,13 +89,13 @@ Examples:
 
 # Start
 START_STRING = """
-Hey {}, I'm acutebot and i can help you to get \
+Hey {}, I'm {BOT_NAME} and i can help you to play music on your group and channel and I can help you to get \
 information about your favorite movies, tv and anime shows, you can also download \
 music & can view song lyrics using me! Just click the button \
 below to get started with list of possible commands...
 
 You can also search movies, tvshows & \
-anime inline! just type <pre>@acutebot</pre> in \
+anime inline! just type <pre>{BOT_USERNAME}</pre> in \
 your message box and follow the instructions.
 
 And don't forget to smile, atleast once in a while ;)
@@ -110,27 +106,24 @@ START_STRING_GRP = "Hmmm?"
 # About
 ABOUT_STR = f"""
 I'm fully written in \
-Python3 by <a href="tg://user?id=894380120">starry</a>, \
+Python3 by <a href="https://t.me/N_A_V_I_P_A_V_I">MrProfessor</a>, \
 feel free to report him if you find any rough edge inside me.
 
-<b>×</b> Bot version : <pre>{__version__}</pre>
-<b>×</b> Python version : <pre>{python_version()}</pre>
-<b>×</b> Library version : <pre>PTB {_libv_}</pre>
+<b>×</b> Name  : <a href="https://t.me/{BOT_USERNAME}">{BOT_NAME}</a>
+<b>×</b> Creator : <a href="https://t.me/{USERNAME}">{NAME}</a>
+<b>×</b> Python version : 3.9.8
+<b>×</b> Library version : Pyrogram
 <b>×</b> Movies & TV data : <pre>themoviedb.org</pre>
 <b>×</b> Anime data from : <pre>kitsu.io</pre>
 <b>×</b> Music data from : <pre>deezer.com</pre>
 <b>×</b> Lyrics data from : <pre>genius.com</pre>
 
-If you enjoyed using me & wanna support my creator \
-hit the donate button below, since he's just a student so \
-every little helps to pay for my server, and ofcourse boosting morale ;)
-
 """
 
 # Help
 HELP_STR = """
-Hey there, click on the buttons below to get documentations \
-for the related functions.
+Hey there 👋, click on the buttons below to get Help \
+for the related functions. 😜
 """
 
 MOVIE_HELP = """
@@ -138,17 +131,29 @@ MOVIE_HELP = """
 
 <b>×</b> /movies : Search for info about your favorite movies.
 """
+SERIES_HELP = """
+<b> help for Series 😉 </b>
 
+<b>×</b> /tvshows : Get information for your favotite TV shows/Series.
+"""
 ANIME_HELP = """
-<b>🗒️ Documentation for Anime & Manga related functionsfunctions:</b>
+<b> help for Anime 😉 </b>
 
-<b>×</b> /anime : Search for info about your favorite anime titles.
-<b>×</b> /manga : Get information about your favorite manga titles.
+<b>×</b> /anime : Search for info about your favorite Anime titles.
+"""
+MANGA_HELP = """
+<b> help for Manga 😉 </b>
+
+<b>×</b> /manga : Get information about your favorite Manga titles.
 """
 MUSIC_HELP = """
-<b> music & lyrics related functions:</b>
+<b> help for music 😉 </b>
 
 <b>×</b> /music : Download your favorite music in high resolution.
+"""
+LYRICS_HELP = """
+<b> help for Lyrics 😉 </b>
+
 <b>×</b> /lyrics : Get lyrics for your favorite songs.
 """
 SUB_HELP = """
