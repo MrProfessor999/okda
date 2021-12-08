@@ -25,11 +25,11 @@ from Music.helpers.channelmusic import get_chat_id
 from Music.helpers.decorators import authorized_users_only
 from Music.helpers.filters import command, other_filters
 from Music.helpers.gets import get_file_name
-from Music.services.callsmusic import callsmusic
-from Music.services.callsmusic import client as USER
-from Music.services.converter import convert
-from Music.services.downloaders import youtube
-from Music.services.queues import queues
+from plugins.callsmusic import callsmusic
+from plugins.callsmusic import client as USER
+from plugins.converter import convert
+from plugins.youtube import youtube
+from plugins.queues import queues
 
 aiohttpsession = aiohttp.ClientSession()
 chat_id = None
