@@ -1,7 +1,5 @@
 
-# Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-
-
+#  (c) 2020 Stɑrry Shivɑm // This file
 
 
 from platform import python_version
@@ -136,12 +134,11 @@ for the related functions.
 """
 
 MOVIE_HELP = """
-<b>🗒️ Documentation for Movies & TV related functions:</b>
+<b> help for Movies 😉 </b>
 
 <b>×</b> /movies : Search for info about your favorite movies.
-<b>×</b> /tvshows : Get information for your favotite TV shows.
-<b>×</b> /toprated : (Soon) | View information about top rated, Movie & TV titles.
 """
+
 ANIME_HELP = """
 <b>🗒️ Documentation for Anime & Manga related functionsfunctions:</b>
 
@@ -149,18 +146,14 @@ ANIME_HELP = """
 <b>×</b> /manga : Get information about your favorite manga titles.
 """
 MUSIC_HELP = """
-<b>🗒️ Documentation for music & lyrics related functions:</b>
+<b> music & lyrics related functions:</b>
 
 <b>×</b> /music : Download your favorite music in high resolution.
 <b>×</b> /lyrics : Get lyrics for your favorite songs.
-<b>×</b> /nowplaying : Flex you currently or last played song in spotify.
 """
-MISC_HELP = """
-<b>🗒️ Documentation for some miscs command which don't fit anywhere!</b>
+SUB_HELP = """
 
-<b>×</b> /reddit : Gets you random memes scraped from popular subreddits.
 <b>×</b> /subtitle : Download subtitles for your movies.
-<b>×</b> /watchlist : Get list of saved shows from your watchlist :D.
 """
 
 # Errors
