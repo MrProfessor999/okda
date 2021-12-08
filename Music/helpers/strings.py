@@ -1,4 +1,4 @@
-from Music import BOT_NAME , BOT_USERNAME , USERNAME , NAME
+from Music.config import BOT_NAME , BOT_USERNAME , USERNAME , NAME
 
 
 # Contents
