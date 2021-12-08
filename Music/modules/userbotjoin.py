@@ -5,7 +5,7 @@ from pyrogram.errors import UserAlreadyParticipant
 
 from Music.config import SUDO_USERS
 from Music.helpers.decorators import authorized_users_only, errors
-from Music.services.callsmusic import client as USER
+from plugins.callsmusic import client as USER
 
 
 @Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
