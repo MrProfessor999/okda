@@ -8,6 +8,9 @@
 
 <h2> Features 🔥 </h2>
 
+- information about movies & series
+- subtitles
+- lyrics of song 
 - Thumbnail Support
 - Playlist Support
 - Current playback support
