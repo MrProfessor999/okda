@@ -37,9 +37,9 @@
       "value": "MrProfessor"
     },
     "USERNAME": {
-      "description": "Your telegram USERNAME [Leave this if you don't have one].",
+      "description": "Your telegram USERNAME without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "@N_A_V_I_P_A_V_I"
+      "value": "N_A_V_I_P_A_V_I"
     },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
