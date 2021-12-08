@@ -1,9 +1,9 @@
 {
-  "name": "DaisyXMusic",
-  "logo": "https://telegra.ph/file/36ff1b571aa11df5812de.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/TeamDaisyX/DaisyXMusic",
+  "name": "Luna_bot",
+  "logo": "https://telegra.ph/file/e487f1de19f7a6667b9de.jpg",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat.and get information about movies and tv series any many more .",
+  "keywords": ["music", "voicechat", "subtitles", "movie", "series", "telegram"],
+  "repository": "https://github.com/Navipavi6818/luna_bot",
   "stack": "container",
   "buildpacks": [
    {
@@ -30,6 +30,16 @@
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
       "value": ""
+    },
+    "Name": {
+      "description": "Your telegram name [Leave this if you don't have one].",
+      "required": false,
+      "value": "MrProfessor"
+    },
+    "USERNAME": {
+      "description": "Your telegram USERNAME [Leave this if you don't have one].",
+      "required": false,
+      "value": "@N_A_V_I_P_A_V_I"
     },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
@@ -75,7 +85,7 @@
     },
     "SUDO_USERS": {
       "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
+      "required": true      
     },
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
