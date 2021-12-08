@@ -1,16 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# MIT License
+
 # Copyright (c) 2020 Stɑrry Shivɑm // This file is part of AcuteBot
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
 
 
 
@@ -188,48 +178,6 @@ TOSEARCHTV = "Please reply with the TV title you wanna look for."
 TOSEARCH_ANIME = "Please reply with the anime title you want to look for."
 TOSEARCH_MANGA = "Please reply with the manga name you wanna look for."
 
-# Favs
-NOFAVS = "Hmmm 🤔 looks like you don't have any title saved in your watchlist yet!"
-REMFAV = "Great work! Successfully cleared your watchlist :)"
-SAVED_FAV = "Added '{}' to your Watchlist!"
-FAV_EXIST = (
-    "Hey there this title is already in your watchlist, Go & finish it instead ;)"
-)
-NOT_ALLOWED = "The one who issued the command shall only click this holy button."
-
-# Stats
-STATS = """
-📊 Current Stats;
-👥 Total users : {}
-💛 Watchlist saved : {}
-"""
-
-# Greet
-GREET = "Hey {}! Thank you for adding me in {} :)"
-
-# Lyrics
-SONGNAME = "Please tell me name of the song you want lyrics for."
-ARTISTNAME = "Great! now tell me name of the artist for this song."
-
-LYRICS_ERR = """Sorry, looks like i forgot your song name, possibly due to restart \
-Would you mind sending me again?
-"""
-LYRIC_NOT_FOUND = "Sorry i couldn't find lyrics for that song."
-LYRICS_TOO_BIG = (
-    "Lyrics of this song is too big for telegram, I'm sending it as a file..."
-)
-
-# Music
-MUSICQ = "Please choose the quality of music :)"
-MUSICNAME = "Okay! tell me name of the song you're looking for."
-UPLOAD_BOTAPI = "⌛ uploading song please wait..."
-UPLOAD_MTPROTO = "Hmm, file size is more than 50MBs, uploading via mtproto this might take around 5 mins, please wait..."
-MUSICNOTFOUND = "Sorry i couldn't find that song :("
-
 # Subtitles
 TOSEARCHSUBS = "Please reply with the Movie | Anime name you want subs for."
 SUBS_STR = "🏷 Subtitles for <b>{}</b>.\nClick on buttons below to download!"
-
-# Spotify
-SPT_LOGIN = "Hey {}, Please click the button below to login with your spotify account."
-SPT_LOGIN_PM = "Please contact me in PM to login with your spotify account, inorder to use this feature."
