@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from Music.config import PMPERMIT, SUDO_USERS
-from Music.services.callsmusic import client as USER
+from plugins.callsmusic import client as USER
 
 PMSET = True
 pchats = []
