@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from Music.config import SUDO_USERS
-from Music.services.callsmusic import client as USER
+from plugins.callsmusic import client as USER
 
 
 @Client.on_message(filters.command(["broadcast"]))
