@@ -7,8 +7,8 @@ from Music.function.admins import set
 from Music.helpers.channelmusic import get_chat_id
 from Music.helpers.decorators import authorized_users_only, errors
 from Music.helpers.filters import command, other_filters
-from Music.services.callsmusic import callsmusic
-from Music.services.queues import queues
+from plugins.callsmusic import callsmusic
+from plugins.queues import queues
 from Music.config import que
 
 
