@@ -13,7 +13,7 @@
 # SOFTWARE.
 
 
-from acutebot import __version__
+
 from platform import python_version
 from telegram import __version__ as _libv_
 
