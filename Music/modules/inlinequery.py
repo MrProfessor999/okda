@@ -9,7 +9,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from Music.config import TMDBAPI 
 from Music.helpers import strings as st
 from Music.helpers.parsedata import article
-from Musichelpers.keyboard import keyboard
+from Music.helpers.keyboard import keyboard
 
 pic_url = "https://image.tmdb.org/t/p"
 base_url = "https://api.themoviedb.org/3"
