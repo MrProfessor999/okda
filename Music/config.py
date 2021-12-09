@@ -4,10 +4,8 @@ import os
 from os import getenv
 import telegram.ext as tg
 
-from dotenv import load_dotenv
 
-if os.path.exists("local.env"):
-    load_dotenv("local.env")
+
 
 que = {}
 BOT_TOKEN = getenv("BOT_TOKEN")
