@@ -27,7 +27,7 @@
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrProfessor999/MUSIC_PLAYER_BOT-V4)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrProfessor999/okda)
 
 Get pyrogram (p)  `SESSION` from here:
 
