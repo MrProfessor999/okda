@@ -16,17 +16,15 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-from lunabot import typing
-from lunabot.helpers import strings as st
-from lunabot.helpers.parsedata import sort_caps
-from lhelpers.keyboard import keyboard
+from Music.helpers import strings as st
+from Music.helpers.parsedata import sort_caps
+from Music.helpers.keyboard import keyboard
 
 base_url = "https://kitsu.io/api/edge"
 tempdict = {}
 
 
 @run_async
-@typing
 def manga_entry(update, context):
     update.effective_message.reply_text(
         st.TOSEARCH_MANGA, reply_markup=ForceReply(selective=True),
@@ -36,7 +34,6 @@ def manga_entry(update, context):
 
 
 @run_async
-@typing
 def manga(update, context):
     msg = update.message
     user = update.effective_user
@@ -130,7 +127,6 @@ def manga_button(update, context):
 
 
 @run_async
-@typing
 def cancel(update, context):
     context.bot.sendMessage(update.effective_chat.id, (st.CANCEL))
     return ConversationHandler.END
