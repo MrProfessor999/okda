@@ -53,4 +53,3 @@ BANNER = """
 """
 
 
-LOG.info("%s", BANNER)
