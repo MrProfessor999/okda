@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
 from Music.config import BOT_NAME as bn
-from MUSIC.config import DURATION_LIMIT
+from Music.config import DURATION_LIMIT
 from Music.config import UPDATES_CHANNEL as updateschannel
 from Music.config import que
 from Music.helpers.admins import get_administrators
