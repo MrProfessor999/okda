@@ -6,7 +6,7 @@ from telegram.ext import InlineQueryHandler
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Music import TMDBAPI 
+from Music.config import TMDBAPI 
 from Music.helpers import strings as st
 from Music.helpers.parsedata import article
 from Musichelpers.keyboard import keyboard
