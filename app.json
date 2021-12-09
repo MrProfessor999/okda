@@ -13,11 +13,7 @@
      "url": "heroku/python"
    }   
   ],        
-  "env": {
-    "SESSION_NAME": {
-      "description": "Pyrogram session string",
-      "required": true
-    },
+  "env": {    
     "BOT_TOKEN": {
       "description": "A bot token from @BotFather",
       "required": true
@@ -55,11 +51,6 @@
       "description": "Your MusicPlayer's assistant Username without @.",
       "required": true
     },
-    "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
-      "required": false,
-      "value": ""
-    },    
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
@@ -73,28 +64,14 @@
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
       "required": true
-    },
-    "PMPERMIT": {
-      "description": "Change to turn off",
-      "required": false,
-      "value": "ENABLE"
     },    
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
-      "required": true
-    },
-    "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
       "required": true      
     },
     "TMDBAPI": {
       "description": "your TMDBAPI.",
       "required": true
-    },
-    "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
-      "required": true,
-      "value": "10"
     }
   }
 }
