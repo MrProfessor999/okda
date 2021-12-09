@@ -16,6 +16,7 @@ UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "EDIT_REPO")
 API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 BOT_USERNAME = getenv("BOT_USERNAME")
+BG_IMAGE = getenv("BG_IMAGE")
 USERNAME = getenv("USERNAME")
 NAME = getenv("NAME")
 GENIUS = "false"
