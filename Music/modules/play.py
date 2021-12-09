@@ -27,7 +27,7 @@ from Music.helpers.filters import command, other_filters
 from Music.helpers.gets import get_file_name
 from plugins.callsmusic import callsmusic
 from plugins.callsmusic import client as USER
-from plugins.converter import convert
+from plugins.converter import converter
 from plugins.youtube import youtube
 from plugins.queues import queues
 
