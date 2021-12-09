@@ -72,8 +72,7 @@ def sendlyrics(update, context):
                 caption=f"🎸 {song} - {artist}",
             )
             os.remove("acute-lyrics.txt")
-        else:
-            LOG.error(excp.message)
+        
 
     rep.delete()
     del SONGDICT[user.id]
