@@ -9,7 +9,7 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, ConversationHa
 from telegram.error import BadRequest
 from telegram import ForceReply
 
-from Music import LOG, GENIUS 
+from Music.config import LOG, GENIUS 
 from Music.helpers import strings as st
 
 ARTIST, LYRICS = range(2)
