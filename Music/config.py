@@ -33,5 +33,9 @@ LOG_GRP = getenv("LOG_GRP", None)
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 TMDBAPI = getenv("TMDBAPI", None)
+BANNER = """
+{BOT_USERNAME} IS RUNNING 🎶💫💫
+"""
 
-LOG = logging.getLogger(__name__)
+
+LOG.info("%s", BANNER)
