@@ -55,7 +55,6 @@ def moviedata(c_id):
 
 
 @run_async
-@typing
 def movie_entry(update, context):
 
     update.effective_message.reply_text(
@@ -66,7 +65,6 @@ def movie_entry(update, context):
 
 
 @run_async
-@typing
 def movie(update, context):
     msg = update.message
     user = update.effective_user
@@ -157,7 +155,6 @@ def movie_button(update, context):
 
 
 @run_async
-@typing
 def cancel(update, context):
     context.bot.sendMessage(update.effective_chat.id, (st.CANCEL))
     return ConversationHandler.END
