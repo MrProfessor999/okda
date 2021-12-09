@@ -14,7 +14,7 @@ from telegram.ext import (
 from telegram.ext.dispatcher import run_async
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
 
-from Music.import TMDBAPI
+from Music.config import TMDBAPI
 from Music.helpers import strings as st
 from Music.helpers.parsedata import byname, byindex, sort_caps, tvruntime
 from Music.helpers.keyboard import keyboard
